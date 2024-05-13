@@ -16,7 +16,7 @@ export default function MyApppdf() {
   }
 
   return (
-    <iframe className='overflow-scroll size-96'  src='/mipdf.pdf' ></iframe>     
+    <iframe className='overflow-scroll w-3/4 h-full'  src='/mipdf.pdf' ></iframe>     
 
   );
 }
