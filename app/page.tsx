@@ -11,7 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-12 p-12 h-screen">
+    <main className="flex flex-col items-center gap-12 p-12 h-screen ">
       <div className="flex flex-row items-center w-full justify-around gap-8 md:gap-0">
 
               <h1>Alejandro caballero Nieto</h1>
