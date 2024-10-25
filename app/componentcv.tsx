@@ -15,6 +15,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 export default function CVcomponents() {
   const [cert,setcert] = useState<any>("cv")
+  console.log(cert)
   return (
     <main className="flex flex-col items-center gap-12 p-12 h-screen ">
       <div className="flex flex-row items-center w-full justify-around gap-8 md:gap-0">
@@ -27,7 +28,7 @@ export default function CVcomponents() {
        
 
       {
-            cert == "cv" ?  <MyApppdf/> : <Certificadopdf/>
+            cert == "cv" ?  <MyApppdf/> : <Certificadopdf cert ={cert} setcerted ={setcert}/>
         }
 
        
@@ -36,7 +37,7 @@ export default function CVcomponents() {
       <div className="mt-4 flex flex-row items-start md:items-center " >
         <a
           href="https://www.linkedin.com/in/alejandro-caballero-nieto-61243425a"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:scale-105"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -52,7 +53,7 @@ export default function CVcomponents() {
 
         <a
           href="https://github.com/laleworks/portafolio"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:scale-105"
           target="_blank"
           rel="noopener noreferrer"
         >

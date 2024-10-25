@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Tabs, Tab } from '@nextui-org/tabs';
+import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
 
 // Define la interfaz para las props
 interface TabsComponentProps {
@@ -14,7 +14,7 @@ function Tabscomponent({ certed, setcerted }: TabsComponentProps) {
   const handleChange = (value:any) => {
     console.log(value)
     console.log("ddd")
-    setcerted(!certed);
+    setcerted(value);
   };
 
   return (
@@ -22,7 +22,10 @@ function Tabscomponent({ certed, setcerted }: TabsComponentProps) {
       <Tab key="cv" title="Currículum">
         {/* Contenido para la pestaña de Currículum */}
       </Tab>
-      <Tab key="cert" title="Certificado">
+      <Tab key="certdaw" title="Certificado-Daw">
+        {/* Contenido para la pestaña de Certificado */}
+      </Tab>
+      <Tab key="certdam" title="Certificado- Dam">
         {/* Contenido para la pestaña de Certificado */}
       </Tab>
     </Tabs>
