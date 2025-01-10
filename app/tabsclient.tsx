@@ -22,10 +22,10 @@ function Tabscomponent({ certed, setcerted }: TabsComponentProps) {
       <Tab key="cv" title="Currículum">
         {/* Contenido para la pestaña de Currículum */}
       </Tab>
-      <Tab key="certdaw" title="Certificado-Daw">
+      <Tab key="certdaw" title="Certificado-DAW">
         {/* Contenido para la pestaña de Certificado */}
       </Tab>
-      <Tab key="certdam" title="Certificado- Dam">
+      <Tab key="certdam" title="Certificado- DAM">
         {/* Contenido para la pestaña de Certificado */}
       </Tab>
     </Tabs>
