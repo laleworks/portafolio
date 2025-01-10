@@ -22,7 +22,7 @@ export default function CVcomponents() {
 
               <h1>Alejandro caballero Nieto</h1>
 
-               <strong>Tecnico de Daw</strong>
+               <strong>Tecnico de DAW y DAM</strong>
       </div>
       <Tabscomponent certed ={cert} setcerted ={setcert}/>
        
