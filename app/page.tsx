@@ -13,6 +13,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 export default function Home() {
   return (
+    
     <CVcomponents/>
   );
 }
